@@ -10,8 +10,7 @@ angular.module('popups').controller('VideoPlayerPopupCtrl',['$scope','$timeout',
         $scope.videoUrl = videoPlayerPopup.getParams().url;
         $scope.videoId = videoPlayerPopup.getParams().id;
         var url = getClientUrl();
-        var imgurl = 'assets/clients/sanya.jpg';
-        $('.ad-logo').css({"background-image": "url("+imgurl+")"});
+        $('.ad-logo').css({"background-image": "url("+url+")"});
     };
 
     var getClientUrl = function(){

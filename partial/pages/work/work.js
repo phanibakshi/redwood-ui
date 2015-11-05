@@ -2,16 +2,16 @@ angular.module('y').controller('WorkCtrl',['$scope','$timeout','$sce','videoPlay
     var work = $scope;
     work.nestedArray = [];
     work.totalVideos = [
-        {id:1,url:'https://www.youtube.com/watch?v=kbviQv8j500',adText:"Footware Ad",desc:'Ad description right from crew to technology'},
-        {id:2,url:'https://www.youtube.com/watch?v=3qxftKkOxMo',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
-        {id:3,url:'https://www.youtube.com/watch?v=zmtVo8bnQXg',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
-        {id:4,url:'https://www.youtube.com/watch?v=7MMwfjvUb-o',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
-        {id:5,url:'https://www.youtube.com/watch?v=3qxftKkOxMo',adText:"Footware Ad",desc:'Ad description right from crew to technology'},
-        {id:6,url:'https://www.youtube.com/watch?v=zmtVo8bnQXg',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
-        {id:7,url:'https://www.youtube.com/watch?v=3qxftKkOxMo',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
-        {id:8,url:'https://www.youtube.com/watch?v=zmtVo8bnQXg',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
-        {id:9,url:'https://www.youtube.com/watch?v=3qxftKkOxMo',adText:"Footware Ad",desc:'Ad description right from crew to technology'},
-        {id:10,url:'https://www.youtube.com/watch?v=zmtVo8bnQXg',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'}
+        {id:1,url:'https://www.youtube.com/watch?v=yF5IyrNprqY',adText:"Silly Squid",desc:'Silly squid is a trending brand for T-shirts, mugs and much more'},
+        {id:2,url:'https://www.youtube.com/watch?v=7MMwfjvUb-o',adText:"Crash the Pepsi IPL",desc:'One of our work in Crash the pepsi IPL contest'}
+        //{id:3,url:'https://www.youtube.com/watch?v=zmtVo8bnQXg',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
+        //{id:4,url:'https://www.youtube.com/watch?v=3qxftKkOxMo',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
+        //{id:5,url:'https://www.youtube.com/watch?v=3qxftKkOxMo',adText:"Footware Ad",desc:'Ad description right from crew to technology'},
+        //{id:6,url:'https://www.youtube.com/watch?v=zmtVo8bnQXg',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
+        //{id:7,url:'https://www.youtube.com/watch?v=3qxftKkOxMo',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
+        //{id:8,url:'https://www.youtube.com/watch?v=zmtVo8bnQXg',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'},
+        //{id:9,url:'https://www.youtube.com/watch?v=3qxftKkOxMo',adText:"Footware Ad",desc:'Ad description right from crew to technology'},
+        //{id:10,url:'https://www.youtube.com/watch?v=zmtVo8bnQXg',adText:"CoCo Cola Ad",desc:'Ad description right from crew to technology'}
     ];
 
     work.trustSrc = function(src) {

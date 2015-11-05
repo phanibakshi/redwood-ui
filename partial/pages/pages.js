@@ -3,7 +3,7 @@ angular.module('y').controller('PagesCtrl',['$scope','$location', '$anchorScroll
     pg.menuList = [
         {label:'Home',iconclass:'fa fa-comment-o fa-3x',container:'home-container',id:'home'},
         {label:'About us',iconclass:'fa fa-trophy fa-3x',container:'about-us-container',id:'about'},
-        {label:'Team',iconclass:'fa fa-puzzle-piece fa-3x',container:'team-container',id:'team'},
+        //{label:'Team',iconclass:'fa fa-puzzle-piece fa-3x',container:'team-container',id:'team'},
         {label:'Work',iconclass:'fa fa-cogs fa-3x',container:'work-container',id:'work'},
         {label:'Clients',iconclass:'fa fa-users fa-3x',container:'clients-container',id:'clients'},
         {label:'Contact us',iconclass:'fa fa-pencil-square-o fa-3x',container:'contact-us-container',id:'contactus'}

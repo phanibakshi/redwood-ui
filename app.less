@@ -15,6 +15,7 @@
 @import "popups/popups.less";
 @import "partial/pages/clients/clients.less";
 @import "partial/pages/team/team.less";
+@import "directive/custom-carousel/custom-carousel.less";
 /* Add Component LESS Above */
 
 /* Required for Angular UI Bootstrap */
@@ -175,6 +176,20 @@ textarea {
 @media screen and (max-width:990px){
     .large-carousel{
         display: none;
+    }
+    .custom-carosel{
+        height: 350px!important;
+        .right-icon {
+            margin: 65px 0px;
+            margin-right: -15px;
+        }
+        .left-icon {
+            margin: 65px 0px;
+            margin-left: -15px;
+        }
+        .middle-container{
+            width: 85%;
+        }
     }
 }
 

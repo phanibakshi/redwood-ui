@@ -20,7 +20,6 @@ angular.module('y').controller('PagesCtrl',['$scope','$location', '$anchorScroll
             }
         });
         activateStickyBar();
-
         /*$('#stick-bar').affix({
             offset: {
                 top:$('#stick-bar').offset().top

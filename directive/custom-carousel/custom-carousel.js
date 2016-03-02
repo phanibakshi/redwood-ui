@@ -11,6 +11,7 @@ angular.module('y').directive('customCarousel', ['$timeout','$sce','videoPlayerP
             scope.slidesPerPage = 0;
             scope.totalslides = 0;
             scope.nestedArray = [];
+            scope.showControls = true;
 
             scope.caroselIconClick = function(type){
                 $('.carousel').carousel(type);
@@ -28,7 +29,10 @@ angular.module('y').directive('customCarousel', ['$timeout','$sce','videoPlayerP
                     var arr = videos.slice(start,end);
                     scope.nestedArray.push(arr);
                 }
-                console.log(scope.nestedArray);
+                //console.log(scope.nestedArray);
+                var el = document.getElementById("myCarousel");
+                var elementExists = window.getComputedStyle(el).display === 'block';
+                scope.showControls = (elementExists)?(scope.nestedArray.length > 1):true;
             };
 
             scope.trustSrc = function(src) {

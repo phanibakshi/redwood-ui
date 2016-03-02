@@ -43,6 +43,9 @@ angular.module('y').directive('customCarousel', ['$timeout','$sce','videoPlayerP
                 //Opens Video Popup
                 obj.vid = 'youtube'+obj.id;
                 var url = obj.url;
+                var results;
+                results = url.match("[\\?&]v=([^&#]*)");
+                obj.videoid = ( results === null ) ? url : results[1];
                 videoPlayerPopup.show(obj).then(function(data) {
                     //do nothing
                 });

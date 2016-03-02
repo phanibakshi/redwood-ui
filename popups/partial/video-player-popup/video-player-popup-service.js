@@ -6,6 +6,7 @@ angular.module('popups').factory('videoPlayerPopup',['popupService',function(pop
             params.id = obj.vid;
             params.adText = obj.adText;
             params.desc = obj.desc;
+            params.videoid = obj.videoid;
             //params = obj;
             return (popupService.show({
                 templateUrl: "popups/partial/video-player-popup/video-player-popup.html"

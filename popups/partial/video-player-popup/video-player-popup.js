@@ -34,7 +34,7 @@ angular.module('popups').controller('VideoPlayerPopupCtrl',['$scope','$timeout',
 
     $timeout(function(){
         var id = '#popup'+videoPlayerPopup.getParams().id;
-        $(id).mediaelementplayer();
+        //$(id).mediaelementplayer();
         //$timeout(function(){
             $('.video-popup').addClass('open-popup');
         //},100);

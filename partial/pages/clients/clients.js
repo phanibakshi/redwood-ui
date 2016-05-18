@@ -2,9 +2,10 @@ angular.module('y').controller('ClientsCtrl',['$scope','$timeout',function($scop
     var cl = $scope;
 
     cl.clientsList = [
-        {id:1,url:'assets/clients/hungry_hippo.png'},
-        {id:2,url:'assets/clients/sunrise.png'},
-        {id:3,url:'assets/clients/silly_squid.png'}
+        {id:1,url:'assets/clients/cmr_group_of_institutions.png'},
+        {id:2,url:'assets/clients/hungry_hippo.png'},
+        {id:3,url:'assets/clients/sunrise.png'},
+        {id:4,url:'assets/clients/silly_squid.png'}
     ];
 
     cl.loadImages = function(){
